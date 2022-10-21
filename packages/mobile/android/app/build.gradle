@@ -115,12 +115,10 @@ android {
 
     signingConfigs {
         release {
-            if (project.hasProperty('ACTUAL_UPLOAD_STORE_FILE')) {
-                storeFile file(ACTUAL_UPLOAD_STORE_FILE)
-                storePassword ACTUAL_UPLOAD_STORE_PASSWORD
-                keyAlias ACTUAL_UPLOAD_KEY_ALIAS
-                keyPassword ACTUAL_UPLOAD_KEY_PASSWORD
-            }
+                storeFile file('actual.keystore')
+                storePassword 'actual'
+                keyAlias 'actual'
+                keyPassword 'actual'
         }
     }
 

@@ -13,15 +13,18 @@
   },
   "dependencies": {
     "@babel/core": "~7.12.9",
-    "@babel/runtime": "~7.12.18",
+    "@babel/runtime": "^7.19.4",
     "@expo/react-native-action-sheet": "^3.6.0",
     "@jlongster/sentry-metrics-actual": "^0.0.10",
+    "@react-native-community/cli-platform-android": "^9.2.1",
     "@react-native-community/masked-view": "0.1.11",
     "@react-navigation/bottom-tabs": "^6.0.5",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.1.0",
     "@reactions/component": "^2.0.2",
     "@sentry/react-native": "3.0.2",
+    "babel-preset-jwl-app": "^6.1.12",
+    "debounce": "^1.2.1",
     "jest": "^28.1.0",
     "jsc-android": "^241213.1.0",
     "loot-core": "*",
@@ -30,7 +33,8 @@
     "nodejs-mobile-gyp": "^0.3.1",
     "nodejs-mobile-react-native": "0.6.3",
     "patch-package": "^6.1.2",
-    "react": "16.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-native": "0.65.1",
     "react-native-codegen": "^0.0.7",
     "react-native-gesture-handler": "1.10.3",
@@ -47,6 +51,9 @@
     "rn-fetch-blob": "^0.11.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
     "rn-snoopy": "^2.0.2"
   }
 }
